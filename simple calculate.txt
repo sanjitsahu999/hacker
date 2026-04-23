@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+   int a, b, choice;
+   printf("entwe your first number");
+   scanf("%d",&a);
+   printf("entwe your second number");
+   scanf("%d",&b);
+   
+   printf("1 add\n2 sub\n3 mut\n4 div\n5 modu\n");
+   printf("enter your choice");
+   scanf("%d", &choice);
+
+   switch (choice){
+      case 1: printf("resuit=%d",a + b);
+      break;
+      case 2: printf("resuit=%d",a - b);
+       break;
+      case 3: printf("resuit=%d",a * b);
+       break;
+      case 4: printf("resuit=%d",a / b);
+       break;
+      case 5: printf("resuit=%d",a % b); 
+      break;
+      default:printf("invaild choice");
+   }
+   return 0;
+}
